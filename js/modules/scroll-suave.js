@@ -6,6 +6,7 @@ export default class ScrollSuave {
     } else {
       this.options = options;
     }
+
     this.scrollToSection = this.scrollToSection.bind(this);
   }
 
@@ -23,8 +24,9 @@ export default class ScrollSuave {
   }
 
   init() {
-    if (this.linksInternos.length);
-    this.addLinkEvent();
+    if (this.linksInternos.length) {
+      this.addLinkEvent();
+    }
     return this;
   }
 }
